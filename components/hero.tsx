@@ -41,7 +41,7 @@ export default function Hero({ scrollYProgress }: { scrollYProgress: any }) {
             }}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="text-white text-left text-6xl font-light leading-[1.1] tracking-tight max-w-6xl sm:mx-auto md:text-8xl lg:text-9xl"
+            className="text-white text-left text-5xl font-light leading-[1.1] tracking-tight max-w-6xl sm:mx-auto md:text-8xl lg:text-9xl"
           >
             Digital Agency
             <br />
