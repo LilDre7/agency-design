@@ -87,9 +87,9 @@ export default function index({ modal, projects }: any) {
                 key={`modal_${index}`}
               >
                 <Image
-                  src={`/images/${src}`}
+                  src={src}
                   width={300}
-                  height={0}
+                  height={10}
                   alt="image"
                 />
               </div>

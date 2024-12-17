@@ -24,14 +24,14 @@ export const miniHeroSocialDesktop = [
 ];
 
 export const projects = [
-  { title: "C2 Montreal", src: "/public/images/hero.webp", color: "#000000" },
+  { title: "C2 Montreal", src: "/hero.webp", color: "#000000" },
   {
     title: "Office Studio",
-    src: "/images/hero.webp",
+    src: "/hero.webp",
     color: "#8C8C8C",
   },
-  { title: "Locomotive", src: "/images/second.jpg", color: "#EFE8D3" },
-  { title: "Silencio", src: "/images/hero.webp", color: "#706D63" },
+  { title: "Locomotive", src: "/hero.webp", color: "#EFE8D3" },
+  { title: "Silencio", src: "/hero.webp", color: "#706D63" },
 ];
 
 export const proyectsMobileDesign = [
