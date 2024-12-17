@@ -49,7 +49,7 @@ export default function Page() {
       <div className="hidden lg:block">
         <Proyects />
       </div>
-      <div className="bg-bgProyect bg-cover bg-center max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-20">
+      <div className="lg:hidden bg-bgProyect bg-cover bg-center max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-20">
         {tarjetas.map((tarjeta, i) => (
           <TarjetaParallax key={tarjeta.id} {...tarjeta} indice={i} />
         ))}

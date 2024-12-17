@@ -8,10 +8,11 @@ import { tarjetas } from "@/lib/data";
 export default function PaginaPrincipal() {
   useEffect(() => {
     const lenis = new Lenis({
-      duration: 1.2,
-      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-      orientation: "vertical",
+      duration: 0.8, // Reducción de la duración para una respuesta más rápida
+      easing: (t) => (t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t), // Easing cuadrático suave
+      orientation: "horizontal",
       smoothWheel: true,
+      gestureOrientation: "horizontal", // Permitir gestos horizontales
     });
 
     function raf(time: number) {
