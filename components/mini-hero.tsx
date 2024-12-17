@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 
 import { motion, useTransform } from "framer-motion";
@@ -6,8 +7,7 @@ import { miniHeroSocial, miniHeroSocialDesktop } from "@/lib/data";
 import Image from "next/image";
 import image from "../public/info.jpg";
 
-export function MiniHero({ scrollYProgress }) {
-  
+export function MiniHero({ scrollYProgress }: { scrollYProgress: any }) {
   const scale = useTransform(scrollYProgress, [0, 1], [0.4, 1]);
   const rotate = useTransform(scrollYProgress, [0, 1], [-0, 0]);
 
@@ -69,8 +69,11 @@ export function MiniHero({ scrollYProgress }) {
         {/* mobile */}
         {miniHeroSocial.map((item, index) => (
           <motion.a
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1 }}
             key={index}
-            className="sm:hidden flex flex-col pl-4 pb-4 underline font-medium text-xl"
+            className="sm:hidden flex flex-col pl-4 pb-4 underline font-medium text-xl cursor-pointer hover:scale-90 hover:text-gray-500"
           >
             {item.label}
           </motion.a>
@@ -89,7 +92,7 @@ export function MiniHero({ scrollYProgress }) {
             ABOUT US
           </motion.a>
         </div>
-        <div className="flex flex-col items-end ">
+        <div className="flex flex-col items-end">
           {miniHeroSocialDesktop.map((item, index) => (
             <motion.a
               key={index}

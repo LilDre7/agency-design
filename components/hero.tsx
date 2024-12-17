@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 
 import dynamic from "next/dynamic";
@@ -10,7 +11,8 @@ const MouseFollower = dynamic(
   { ssr: true }
 );
 
-export default function Hero({ scrollYProgress }) {
+export default function Hero({ scrollYProgress }: { scrollYProgress: any }) {
+  
   const scale = useTransform(scrollYProgress, [0, 1], [1, 0.8]);
   const opacity = useTransform(scrollYProgress, [0, 1], [1, 0.8]);
   const rotate = useTransform(scrollYProgress, [0, 1], [0, -6]);
@@ -18,7 +20,7 @@ export default function Hero({ scrollYProgress }) {
   return (
     <motion.section
       style={{ scale, opacity, rotate }}
-      className="sticky top-0 h-screen max-w-full bg-hero bg-cover z-10"
+      className="sticky top-0 h-screen max-w-full bg-hero w-full bg-cover z-10"
     >
       <div className="hidden">
         <MouseFollower />

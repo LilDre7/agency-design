@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable react-hooks/rules-of-hooks */
 import { useRef, useEffect } from "react";
 import { motion } from "framer-motion";
@@ -21,7 +22,7 @@ const scaleAnimation = {
   },
 };
 
-export default function index({ modal, projects }) {
+export default function index({ modal, projects }: any) {
   const { active, index } = modal;
   const modalContainer = useRef(null);
   const cursor = useRef(null);
@@ -77,7 +78,7 @@ export default function index({ modal, projects }) {
         className={styles.modalContainer}
       >
         <div style={{ top: index * -100 + "%" }} className={styles.modalSlider}>
-          {projects.map((project, index) => {
+          {projects.map((project: any, index: any) => {
             const { src, color } = project;
             return (
               <div

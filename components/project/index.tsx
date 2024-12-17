@@ -1,8 +1,9 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 import React from "react";
 import styles from "./style.module.css";
 
-export default function index({ index, title, setModal }) {
+export default function index({ index, title, setModal }: any) {
   return (
     <div
       onMouseEnter={() => {
