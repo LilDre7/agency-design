@@ -9,6 +9,8 @@ import { useEffect, useRef } from "react";
 import type { RefObject } from "react";
 import Proyects from "@/components/proyect-page";
 import Lenis from "@studio-freight/lenis";
+import AwardsSection from "@/components/award";
+import Home from "@/components/hero-two";
 
 export default function Page() {
   const container: RefObject<HTMLDivElement> = useRef(null);
@@ -43,8 +45,10 @@ export default function Page() {
       <MouseFollower size={70} />
       <Hero scrollYProgress={scrollYProgress} />
       <MiniHero scrollYProgress={scrollYProgress} />
+      <Home />
       <PortfolioSlider />
       <Proyects />
+      <AwardsSection />
     </main>
   );
 }

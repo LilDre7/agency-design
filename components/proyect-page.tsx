@@ -42,7 +42,7 @@ export default function Proyects() {
         <Modal modal={modal} projects={projects} />
       </div>
       <div className="relative mx-5 my-10 h-16 md:hidden">
-        <a className="absolute right-0 uppercase underline">
+        <a className="absolute right-0 uppercase underline cursor-pointer">
           VIEW ALL SERVICES
         </a>
       </div>

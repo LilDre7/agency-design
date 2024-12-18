@@ -69,10 +69,10 @@ export function MiniHero({ scrollYProgress }: { scrollYProgress: any }) {
         {/* mobile */}
         {miniHeroSocial.map((item, index) => (
           <motion.a
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 1 }}
             key={index}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ rotate: 0, opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: index * 0.1 }}
             className="sm:hidden flex flex-col pl-4 pb-4 underline font-medium text-xl cursor-pointer hover:scale-90 hover:text-gray-500"
           >
             {item.label}
