@@ -30,7 +30,7 @@ export default function Hero({ scrollYProgress }: { scrollYProgress: any }) {
       <div className="relative z-10">
         <NavMenu />
 
-        <div className="flex flex-col w-full justify-center mx-auto px-8 pt-20 pb-12">
+        <div className="flex flex-col w-full justify-center mx-auto px-8 pt-16 pb-12">
           <motion.h1
             initial={{ opacity: 0, y: 20, scale: 0.9 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
@@ -41,7 +41,7 @@ export default function Hero({ scrollYProgress }: { scrollYProgress: any }) {
             }}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="text-white text-left text-5xl font-light leading-[1.1] tracking-tight max-w-6xl sm:mx-auto md:text-8xl lg:text-9xl"
+            className="text-white text-left text-6xl font-light leading-[1.1] tracking-tight max-w-6xl sm:mx-auto md:text-8xl lg:text-9xl"
           >
             Digital Agency
             <br />
