@@ -9,8 +9,6 @@ import { useEffect, useRef } from "react";
 import type { RefObject } from "react";
 import Proyects from "@/components/proyect-page";
 import Lenis from "@studio-freight/lenis";
-import { TarjetaParallax } from "../components/cards/tarjeta-parallax";
-import { tarjetas } from "@/lib/data";
 
 export default function Page() {
   const container: RefObject<HTMLDivElement> = useRef(null);
@@ -46,14 +44,7 @@ export default function Page() {
       <Hero scrollYProgress={scrollYProgress} />
       <MiniHero scrollYProgress={scrollYProgress} />
       <PortfolioSlider />
-      <div className="hidden lg:block">
-        <Proyects />
-      </div>
-      <div className="lg:hidden bg-bgProyect bg-cover bg-center max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-20">
-        {tarjetas.map((tarjeta, i) => (
-          <TarjetaParallax key={tarjeta.id} {...tarjeta} indice={i} />
-        ))}
-      </div>
+      <Proyects />
     </main>
   );
 }

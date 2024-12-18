@@ -1,57 +1,60 @@
 .project {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-    padding: 50px 100px; /* Padding para desktop */
-    border-top: 1px solid rgb(201, 201, 201);
-    cursor: pointer;
-    transition: all 0.2s;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 100px; /* Padding para desktop */
+  border-top: 1px solid rgb(201, 201, 201);
+  cursor: pointer;
+  transition: all 0.2s;
 }
 
 .project:last-of-type {
-    border-bottom: 1px solid rgb(201, 201, 201);
+  border-bottom: 1px solid rgb(201, 201, 201);
 }
 
 .project:hover {
-    opacity: 0.5;
+  opacity: 0.5;
 }
 
 .project:hover h2 {
-    transform: translateX(-10px);
+  transform: translateX(-10px);
 }
 
 .project:hover p {
-    transform: translateX(10px);
+  transform: translateX(10px);
 }
 
 .project h2 {
-    font-size: 60px; /* Tamaño de fuente para desktop */
-    margin: 0px;
-    font-weight: 400;
-    transition: all 0.4s;
+  font-size: 60px; /* Tamaño de fuente para desktop */
+  margin: 0px;
+  font-weight: 400;
+  transition: all 0.4s;
 }
 
 .project p {
-    transition: all 0.4s;
-    font-weight: 300;
+  transition: all 0.4s;
+  font-weight: 300;
 }
 
 /* Media Queries para Responsividad */
 @media (max-width: 768px) {
-    .project {
-        flex-direction: column; /* Cambia a columna en móviles */
-        padding: 20px; /* Reduce el padding en móviles */
-        align-items: flex-start; /* Alinea el contenido a la izquierda */
-        height: 15vh;
-        overflow: hidden;
-    }
+  .project {
+    display: flex;
+    flex-direction: column; /* Cambia a columna en móviles */
+    padding: 30px; /* Reduce el padding en móviles */
+    align-items: flex-start; /* Alinea el contenido a la izquierda */
+    height: 45vh;
+    overflow: hidden;
+    scroll-behavior: auto;
+  }
 
-    .project h2 {
-        font-size: 30px; /* Tamaño de fuente más pequeño en móviles */
-    }
+  .project h2 {
+    font-size: 30px; /* Tamaño de fuente más pequeño en móviles */
+  }
 
-    .project p {
-        font-size: 16px; /* Ajusta el tamaño de la fuente del párrafo */
-    }
+  .project p {
+    font-size: 18px; /* Ajusta el tamaño de la fuente del párrafo */
+    margin-bottom: 20px;
+  }
 }

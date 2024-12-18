@@ -12,7 +12,6 @@ const MouseFollower = dynamic(
 );
 
 export default function Hero({ scrollYProgress }: { scrollYProgress: any }) {
-  
   const scale = useTransform(scrollYProgress, [0, 1], [1, 0.8]);
   const opacity = useTransform(scrollYProgress, [0, 1], [1, 0.8]);
   const rotate = useTransform(scrollYProgress, [0, 1], [0, -6]);
@@ -25,7 +24,6 @@ export default function Hero({ scrollYProgress }: { scrollYProgress: any }) {
       <div className="hidden">
         <MouseFollower />
       </div>
-      {/* <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(0,0,0,0.3),rgba(0,0,0,0.8))]" /> */}
 
       <div className="relative z-10">
         <NavMenu />
@@ -41,16 +39,18 @@ export default function Hero({ scrollYProgress }: { scrollYProgress: any }) {
             }}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="text-white text-left text-6xl font-light leading-[1.1] tracking-tight max-w-6xl sm:mx-auto md:text-8xl lg:text-9xl"
+            className="text-white text-left sm:text-start text-6xl font-light leading-[1.1] tracking-tight max-w-6xl md:text-9xl lg:text- mt-7 sm:mt-20"
           >
             Digital Agency
             <br />
             Based in Costa Rica.
           </motion.h1>
 
-          <p className="w-full text-balance text-white/70 text-xl md:text-2xl mt-8 sm:text-right">
-            At Kreativy, we&apos;re more than just a design agency—we&apos;re
-            your creative companions on the journey to design excellence.
+          <p className="w-full text-balance text-white/70 text-xl md:text-2xl mt-8 sm:mt-10 sm:text-right ">
+            We&apos;re not just a design agency; we&apos;re your friendly design
+            companions. Let&apos;s embark on this creative adventure together
+            and bring your vision to life with a friendly, modern, and
+            innovative touch.
           </p>
 
           <div className="mt-10 sm:mt-6">

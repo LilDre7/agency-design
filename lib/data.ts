@@ -24,63 +24,28 @@ export const miniHeroSocialDesktop = [
 ];
 
 export const projects = [
-  { title: "C2 Montreal", src: "/hero.webp", color: "#000000" },
+  {
+    title: "C2 Montreal",
+    info: "lorem hi my name is Alvaro",
+    src: "/hero.webp",
+    color: "#000000",
+  },
   {
     title: "Office Studio",
+    info: "lorem hi my name is Alvaro",
     src: "/hero.webp",
     color: "#8C8C8C",
   },
-  { title: "Locomotive", src: "/hero.webp", color: "#EFE8D3" },
-  { title: "Silencio", src: "/hero.webp", color: "#706D63" },
-];
-
-export const proyectsMobileDesign = [
   {
-    title: "C2 Montreal",
-    info: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel sequi ratione commodi. Dignissimos in quia omnis eius voluptas eos. Saepe, aliquam consequatur totam ut ipsa odit nesciunt quae voluptatem vel.",
-    image: "/images/hero.webp",
-    href: "#",
+    title: "Locomotive",
+    info: "lorem hi my name is Alvaro",
+    src: "/hero.webp",
+    color: "#EFE8D3",
   },
   {
-    title: "C2 Montreal",
-    info: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel sequi ratione commodi. Dignissimos in quia omnis eius voluptas eos. Saepe, aliquam consequatur totam ut ipsa odit nesciunt quae voluptatem vel.",
-    image: "/images/hero.webp",
-    href: "#",
-  },
-  {
-    title: "C2 Montreal",
-    info: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel sequi ratione commodi. Dignissimos in quia omnis eius voluptas eos. Saepe, aliquam consequatur totam ut ipsa odit nesciunt quae voluptatem vel.",
-    image: "/images/hero.webp",
-    href: "#",
-  },
-  {
-    title: "C2 Montreal",
-    info: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel sequi ratione commodi. Dignissimos in quia omnis eius voluptas eos. Saepe, aliquam consequatur totam ut ipsa odit nesciunt quae voluptatem vel.",
-    image: "/images/hero.webp",
-    href: "#",
-  },
-];
-
-export const tarjetas = [
-  {
-    id: 1,
-    titulo: "Matthias Ladinger",
-    descripcion:
-      "Fotógrafo originario de Austria, radicado en Berlín, Matthias Ladinger es un joven creativo lleno de talento e ideas.",
-    imagen: "/Background.png",
-  },
-  {
-    id: 2,
-    titulo: "Sarah Bennett",
-    descripcion:
-      "Fotógrafa galardonada de Londres, especializada en retratos contemporáneos y fotografía de moda.",
-    imagen: "/images/hero.webp",
-  },
-  {
-    id: 3,
-    titulo: "Studio Contrast",
-    descripcion:
-      "Un colectivo de artistas visuales que desafían los límites de la fotografía moderna y el arte digital.",
-    imagen: "/images/second.jpg",
+    title: "Silencio",
+    info: "lorem hi my name is Alvaro",
+    src: "/hero.webp",
+    color: "#706D63",
   },
 ];
