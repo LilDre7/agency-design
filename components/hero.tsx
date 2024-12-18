@@ -48,7 +48,7 @@ export default function Hero({ scrollYProgress }: { scrollYProgress: any }) {
             Based in Costa Rica.
           </motion.h1>
 
-          <p className="w-full text-balance text-white/70 text-xl md:text-2xl mt-14 sm:text-right">
+          <p className="w-full text-balance text-white/70 text-xl md:text-2xl mt-8 sm:text-right">
             At Kreativy, we&apos;re more than just a design agency—we&apos;re
             your creative companions on the journey to design excellence.
           </p>
