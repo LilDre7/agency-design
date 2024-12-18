@@ -30,7 +30,7 @@ export default function Hero({ scrollYProgress }: { scrollYProgress: any }) {
       <div className="relative z-10">
         <NavMenu />
 
-        <div className="flex flex-col w-full justify-center mx-auto px-8 pt-16 pb-12">
+        <div className="flex flex-col w-full justify-center mx-auto px-7  pb-12">
           <motion.h1
             initial={{ opacity: 0, y: 20, scale: 0.9 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}

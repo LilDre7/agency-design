@@ -29,6 +29,10 @@ export default function PaginaPrincipal() {
 
   return (
     <main className="bg-[#E8E5E5] min-h-screen">
+      <div className="bg-red-400">
+          <h1 className=" text-3xl font-bold text-white">Bienvenido
+            </h1>
+        </div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-20">
         {tarjetas.map((tarjeta, i) => (
           <TarjetaParallax key={tarjeta.id} {...tarjeta} indice={i} />
